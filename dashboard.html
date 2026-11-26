@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="main-container">
+
+    <!-- Sidebar -->
+    <aside>
+        <h2>Pharmacy System</h2>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="medicines.html">Medicines</a></li>
+                <li><a href="suppliers.html">Suppliers</a></li>
+                <li><a href="customers.html">Customers</a></li>
+                <li><a href="billing.html">Billing</a></li>
+                <li><a href="prescriptions.html">Prescriptions</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="index.html" class="logout-link">Logout</a>
+    </aside>
+
+    <!-- Dashboard Content -->
+    <main>
+        <h1>Dashboard</h1>
+        <p>Welcome to the Pharmacy Management System.</p>
+
+        <section id="dashboard">
+            <h2>Overview</h2>
+            <div class="dashboard-cards">
+                <div class="card"><h3>Medicines</h3><p>120</p></div>
+                <div class="card"><h3>Suppliers</h3><p>15</p></div>
+                <div class="card"><h3>Total Sales</h3><p>250</p></div>
+                <div class="card"><h3>Low Stock</h3><p>8</p></div>
+            </div>
+        </section>
+
+        <section id="recent-sales">
+            <h2>Recent Sales</h2>
+            <table>
+                <tr>
+                    <th>Sale ID</th><th>Customer</th><th>Amount</th>
+                </tr>
+                <tr>
+                    <td>101</td><td>Rahul</td><td>₹500</td>
+                </tr>
+                <tr>
+                    <td>102</td><td>Anjali</td><td>₹750</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="medicine-alerts">
+            <h2>Medicine Alerts</h2>
+            <ul>
+                <li>Paracetamol - Low Stock</li>
+                <li>Amoxicillin - Expiring Soon</li>
+            </ul>
+        </section>
+    </main>
+
+</div>
+
+</body>
+</html>
+

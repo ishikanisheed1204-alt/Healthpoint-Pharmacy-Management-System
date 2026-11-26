@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescriptions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="main-container">
+
+    <aside>
+        <h2>Pharmacy System</h2>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="medicines.html">Medicines</a></li>
+                <li><a href="suppliers.html">Suppliers</a></li>
+                <li><a href="customers.html">Customers</a></li>
+                <li><a href="billing.html">Billing</a></li>
+                <li><a href="prescriptions.html">Prescriptions</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="index.html" class="logout-link">Logout</a>
+    </aside>
+
+    <main>
+        <h1>Prescription Management</h1>
+
+        <section id="prescriptions">
+            <h2>Prescription Records</h2>
+            <table>
+                <tr>
+                    <th>ID</th><th>Patient</th><th>Doctor</th><th>Medicine</th>
+                </tr>
+                <tr>
+                    <td>P101</td><td>Rahul Sharma</td>
+                    <td>Dr. Mehta</td><td>Paracetamol</td>
+                </tr>
+                <tr>
+                    <td>P102</td><td>Anjali Verma</td>
+                    <td>Dr. Sharma</td><td>Amoxicillin</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="add-prescription">
+            <h2>Add New Prescription</h2>
+            <form>
+                <label for="patient">Patient Name:</label>
+                <input type="text" id="patient" required>
+
+                <label for="doctor">Doctor Name:</label>
+                <input type="text" id="doctor" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+
+                <label for="medicine">Medicine:</label>
+                <input type="text" id="medicine" required>
+
+                <button type="button" onclick="addPrescription()">Add Prescription</button>
+            </form>
+        </section>
+    </main>
+
+</div>
+<script src="js/prescription.js"></script>
+</body>
+</html>
+

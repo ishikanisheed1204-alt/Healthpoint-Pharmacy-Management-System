@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="main-container">
+
+    <aside>
+        <h2>Pharmacy System</h2>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="medicines.html">Medicines</a></li>
+                <li><a href="suppliers.html">Suppliers</a></li>
+                <li><a href="customers.html">Customers</a></li>
+                <li><a href="billing.html">Billing</a></li>
+                <li><a href="prescriptions.html">Prescriptions</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="index.html" class="logout-link">Logout</a>
+    </aside>
+
+    <main>
+        <h1>Notifications and Alerts</h1>
+
+        <section id="notifications">
+            <h2>Recent Notifications</h2>
+            <ul>
+                <li>Paracetamol stock is running low.</li>
+                <li>Amoxicillin is nearing its expiry date.</li>
+                <li>Cetirizine stock needs updating.</li>
+                <li>A new prescription has been recorded.</li>
+            </ul>
+        </section>
+    </main>
+<button onclick="showNotification()">Check Notifications</button>
+</div>
+<script src="js/notification.js"></script>
+</body>
+</html>
+

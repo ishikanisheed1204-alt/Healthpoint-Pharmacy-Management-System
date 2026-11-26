@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pharmacy Management System - Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Login Section -->
+
+    <div id="login-container">
+
+        <h1>Pharmacy Management System</h1>
+
+        <h2>Login</h2>
+
+        <form id="login-form">
+
+            <label for="username">Username:</label>
+            <input type="text" id="username"
+                   placeholder="Enter your username" required>
+                   <br>
+                
+
+            <label for="password">Password:</label>
+            <input type="password" id="password"
+                   placeholder="Enter your password" required>
+                  <br>
+            <button type="button" onclick="loginUser()">Login</button>
+                   <p id="login-message"></p>
+
+        </form>
+
+        <p><br>
+            Don't have an account?
+            <a href="signup.html">Register here</a>
+        </p>
+
+    </div>
+<script src="js/login.js"></script>
+</body>
+</html>

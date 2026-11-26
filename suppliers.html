@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppliers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="main-container">
+
+    <aside>
+        <h2>Pharmacy System</h2>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="medicines.html">Medicines</a></li>
+                <li><a href="suppliers.html">Suppliers</a></li>
+                <li><a href="customers.html">Customers</a></li>
+                <li><a href="billing.html">Billing</a></li>
+                <li><a href="prescriptions.html">Prescriptions</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="index.html" class="logout-link">Logout</a>
+    </aside>
+
+    <main>
+        <h1>Supplier Management</h1>
+
+        <section id="suppliers">
+            <h2>Supplier Details</h2>
+            <table>
+                <tr>
+                    <th>ID</th><th>Name</th><th>Phone</th><th>Email</th>
+                </tr>
+                <tr>
+                    <td>S101</td><td>ABC Pharma</td>
+                    <td>9876543210</td><td>abc@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>S102</td><td>Medico Distributors</td>
+                    <td>9876501234</td><td>medico@gmail.com</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="add-supplier">
+            <h2>Add New Supplier</h2>
+            <form>
+                <label for="supplier-name">Supplier Name:</label>
+                <input type="text" id="supplier-name" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" required></textarea>
+
+                <button type="button" onclick="addSupplier()">Add Supplier</button>
+            </form>
+        </section>
+    </main>
+
+</div>
+<script src="js/supplier.js"></script>
+</body>
+</html>
+

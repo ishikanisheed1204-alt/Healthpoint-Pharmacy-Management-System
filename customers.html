@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="main-container">
+
+    <aside>
+        <h2>Pharmacy System</h2>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="medicines.html">Medicines</a></li>
+                <li><a href="suppliers.html">Suppliers</a></li>
+                <li><a href="customers.html">Customers</a></li>
+                <li><a href="billing.html">Billing</a></li>
+                <li><a href="prescriptions.html">Prescriptions</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="index.html" class="logout-link">Logout</a>
+    </aside>
+
+    <main>
+        <h1>Customer Management</h1>
+
+        <section id="customers">
+            <h2>Customer Details</h2>
+            <table>
+                <tr>
+                    <th>ID</th><th>Name</th><th>Phone</th><th>Email</th>
+                </tr>
+                <tr>
+                    <td>C101</td><td>Rahul Sharma</td>
+                    <td>9876543210</td><td>rahul@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>C102</td><td>Anjali Verma</td>
+                    <td>9876501234</td><td>anjali@gmail.com</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="add-customer">
+            <h2>Add New Customer</h2>
+            <form>
+                <label for="customer-name">Customer Name:</label>
+                <input type="text" id="customer-name" required>
+
+                <label for="customer-phone">Phone Number:</label>
+                <input type="tel" id="customer-phone" required>
+
+                <label for="customer-email">Email:</label>
+                <input type="email" id="customer-email" required>
+
+                <button type="button" onclick="addCustomer()">Add Customer</button>
+            </form>
+        </section>
+    </main>
+
+</div>
+<script src="js/customer.js"></script>
+</body>
+</html>
+
