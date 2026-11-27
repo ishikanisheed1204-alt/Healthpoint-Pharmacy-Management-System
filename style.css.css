@@ -1,0 +1,262 @@
+
+/* 1. BASIC DESIGN */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F3F6F9;
+    color: #263746;
+    line-height: 1.5;
+}
+
+/* 2. HEADINGS AND TEXT */
+h1, h2, h3 {
+    color: #17324D;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+a {
+    color: #218C87;
+    text-decoration: none;
+}
+
+/* 3. LOGIN AND SIGNUP */
+#login-container {
+    width: 90%;
+    max-width: 430px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #DCE5EC;
+    border-radius: 10px;
+}
+
+#login-container h1,
+#login-container h2 {
+    text-align: center;
+}
+
+/* 4. MAIN LAYOUT */
+#main-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* 5. SIDEBAR */
+#main-container aside {
+    width: 240px;
+    min-width: 240px;
+    background-color: #17324D;
+    padding: 20px;
+}
+
+#main-container aside h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#main-container aside ul {
+    list-style: none;
+}
+
+#main-container aside li {
+    margin-bottom: 8px;
+}
+
+#main-container aside a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#main-container aside a:hover {
+    background-color: #218C87;
+}
+
+/* 6. LOGOUT LINK */
+#main-container aside .logout-link {
+    margin-top: 20px;
+    background-color: #D45D68;
+    text-align: center;
+}
+
+/* 7. MAIN CONTENT */
+#main-container main {
+    flex: 1;
+    min-width: 0;
+    padding: 30px;
+}
+
+/* 8. CONTENT SECTIONS */
+main section {
+    background-color: white;
+    padding: 22px;
+    margin-bottom: 22px;
+    border: 1px solid #DCE5EC;
+    border-radius: 8px;
+}
+
+/* 9. DASHBOARD CARDS */
+.dashboard-cards {
+    display: flex;
+    gap: 15px;
+}
+
+.card {
+    flex: 1;
+    background-color: #E7F3F2;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.card p {
+    color: #218C87;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 10. FORM DESIGN */
+form {
+    margin-top: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #DCE5EC;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #218C87;
+}
+
+textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+/* 11. BUTTONS */
+button {
+    background-color: #218C87;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #176D69;
+}
+
+/* 12. TABLES */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #DCE5EC;
+}
+
+th {
+    background-color: #17324D;
+    color: white;
+}
+
+tbody tr:hover,
+tr:hover {
+    background-color: #E7F3F2;
+}
+
+/* 13. SEARCH FIELD */
+#medicines input {
+    max-width: 450px;
+}
+
+/* 14. BILLING */
+#grand-total {
+    color: #218C87;
+    font-weight: bold;
+}
+
+/* 15. NOTIFICATIONS AND ALERTS */
+#notifications li,
+#medicine-alerts li {
+    background-color: #E7F3F2;
+    padding: 10px;
+    margin-bottom: 8px;
+    list-style-position: inside;
+    border-radius: 5px;
+}
+
+/* 16. RESPONSIVE DESIGN */
+@media (max-width: 700px) {
+
+    #main-container {
+        flex-direction: column;
+    }
+
+    #main-container aside {
+        width: 100%;
+    }
+
+    #main-container main {
+        padding: 15px;
+    }
+
+    .dashboard-cards {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 7px;
+    }
+
+    #medicines input {
+        max-width: 100%;
+    }
+}
+/* SIGNUP PAGE TITLE */
+.signup-title {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #218C87;
+    text-align: center;
+    margin-bottom: 20px;
+}
